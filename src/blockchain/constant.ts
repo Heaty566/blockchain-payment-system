@@ -1,0 +1,4 @@
+export const BLOCK_CHAIN_CONSTANT = {
+    MINE_RATE: 1000,
+    INIT_DIFFICULTY: 10,
+};

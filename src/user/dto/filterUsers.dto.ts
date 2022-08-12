@@ -7,7 +7,7 @@ export class FilterUsersDTO extends PagingFilter {
     name: string;
 }
 
-export const vFilterUsersDto = joi.object({
+export const vFilterUsersDto = joi.object<FilterUsersDTO>({
     name: joi.string().allow('').failover('').required(),
     ...vPagingFilter,
 });
