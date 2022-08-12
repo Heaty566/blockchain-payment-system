@@ -15,7 +15,7 @@ export const config = {
     FACEBOOK_SECRET: process.env.FACEBOOK_SECRET || '',
     FACEBOOK_CLIENT_REDIRECT_URL: process.env.FACEBOOK_CLIENT_REDIRECT_URL || 'http://localhost:4000',
 
-    JWT_SECRET_KEY: process.env.JWT_SECRET_KEY || 'this is secret',
+    JWT_SECRET_KEY: process.env.JWT_SECRET_KEY || 'eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY2MDI5MTI4NCwiaWF0IjoxNjYwMjkxMjg0fQ',
     CLIENT_URL: (process.env.CLIENT_URL || 'http://localhost:3000').split(','),
     SERVER_URL: process.env.SERVER_URL || 'http://localhost:4000',
 
@@ -23,6 +23,9 @@ export const config = {
     SENDGRID_SENDER: process.env.SENDGRID_SENDER || '',
     SENDGRID_URL: process.env.SENDGRID_URL || '',
 
+    REDIS_PORT: Number(process.env.REDIS_PORT) || 6379,
+    REDIS_HOST: process.env.REDIS_HOST || 'localhost',
+    REDIS_DB_NUMBER: Number(process.env.REDIS_DB_NUMBER) || 1,
     PORT: Number(process.env.PORT) || 4000,
     NODE_ENV: process.env.NODE_ENV || monoEnum.NODE_ENV_MODE.DEVELOPMENT,
     DEBUG: process.env.DEBUG || '',
